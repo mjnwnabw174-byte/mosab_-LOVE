@@ -1,1 +1,531 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="theme-color" content="#09040d">
+
+  <title>Mosab × Asoom | حكاية</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- خلفية النجوم -->
+  <div id="stars"></div>
+
+  <!-- قلوب وورود متحركة -->
+  <div id="floatingHearts"></div>
+
+  <!-- الشريط العلوي -->
+  <header class="topbar">
+
+    <div class="logo">
+      M <span>♥</span> A
+    </div>
+
+    <div class="top-actions">
+
+      <button id="soundBtn" class="icon-btn">
+        🔇
+      </button>
+
+      <button id="giftBtn" class="icon-btn">
+        🎁
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="screen hero active">
+
+      <div class="rose">🌹</div>
+
+      <div class="heart">
+        ❤️
+      </div>
+
+      <p class="small-title">
+        ليست مجرد صفحة...
+      </p>
+
+      <h1>
+        Mosab
+        <span>×</span>
+        Asoom
+      </h1>
+
+      <p class="hero-text">
+        بعض الذكريات لا تحتاج أن تُحفظ في الصور فقط...
+        <br>
+        يكفي أن تجد لها مكانًا في القلب.
+      </p>
+
+      <div class="hero-buttons">
+
+        <button id="startBtn" class="main-btn">
+          ابدأ الحكاية ❤️
+        </button>
+
+        <button id="philosophyBtn" class="ghost-btn">
+          اقرأ الفكرة ✨
+        </button>
+
+      </div>
+
+      <div class="scroll-hint">
+        ↓
+      </div>
+
+    </section>
+
+
+    <!-- ================= PHILOSOPHY ================= -->
+
+    <section id="philosophy" class="screen philosophy">
+
+      <div class="section-title">
+
+        <span>🌙</span>
+
+        <h2>
+          فلسفة الحكاية
+        </h2>
+
+        <p>
+          لأن بعض الأشياء أجمل عندما يكون لها معنى.
+        </p>
+
+      </div>
+
+      <div class="philosophy-grid">
+
+        <div class="thought-card">
+          <span>🌹</span>
+          <h3>الذكرى</h3>
+          <p>
+            الذكرى ليست صورة قديمة فقط،
+            بل شعور قرر الزمن أن يحتفظ به.
+          </p>
+        </div>
+
+        <div class="thought-card">
+          <span>✨</span>
+          <h3>اللحظة</h3>
+          <p>
+            أجمل اللحظات ليست دائمًا الكبيرة،
+            أحيانًا تكون كلمة صغيرة جعلت يومًا كاملًا أجمل.
+          </p>
+        </div>
+
+        <div class="thought-card">
+          <span>🎁</span>
+          <h3>الهدية</h3>
+          <p>
+            قيمة الهدية ليست في الشيء نفسه،
+            بل في الفكرة التي جعلت شخصًا يقول:
+            فكرت فيك.
+          </p>
+        </div>
+
+        <div class="thought-card">
+          <span>🌌</span>
+          <h3>الزمن</h3>
+          <p>
+            الزمن يأخذ منا الكثير،
+            لكنه يترك لنا شيئًا واحدًا:
+            الذكريات التي تستحق أن تُروى.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="big-quote">
+
+        <span>“</span>
+
+        <p>
+          ربما لا نستطيع أن نوقف الوقت،
+          لكن نستطيع أن نصنع داخله لحظات
+          تجعلنا نبتسم عندما نتذكرها.
+        </p>
+
+        <span>”</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= LETTERS ================= -->
+
+    <section id="letters" class="screen">
+
+      <div class="section-title">
+
+        <span>💌</span>
+
+        <h2>
+          رسائل صغيرة
+        </h2>
+
+        <p>
+          كلمات وُضعت هنا لتبقى كذكرى جميلة.
+        </p>
+
+      </div>
+
+      <div class="letter-box">
+
+        <div class="letter-decoration">
+          🌹
+        </div>
+
+        <p id="letterText"></p>
+
+        <div class="letter-decoration">
+          🌹
+        </div>
+
+      </div>
+
+      <button id="nextLetter" class="main-btn">
+        رسالة أخرى ✨
+      </button>
+
+    </section>
+
+
+    <!-- ================= MEMORIES ================= -->
+
+    <section id="memories" class="screen">
+
+      <div class="section-title">
+
+        <span>📸</span>
+
+        <h2>
+          معرض الذكريات
+        </h2>
+
+        <p>
+          صور كثيرة... وكل صورة لها حكاية.
+        </p>
+
+      </div>
+
+      <div id="memoryGrid" class="memory-grid"></div>
+
+    </section>
+
+
+    <!-- ================= MUSIC ================= -->
+
+    <section id="musicSection" class="screen">
+
+      <div class="section-title">
+
+        <span>🎵</span>
+
+        <h2>
+          موسيقى الحكاية
+        </h2>
+
+        <p>
+          أحيانًا الموسيقى تقول ما لا تستطيع الكلمات قوله.
+        </p>
+
+      </div>
+
+      <div class="music-card">
+
+        <div class="music-disc">
+          💿
+        </div>
+
+        <div class="music-info">
+
+          <h3 id="songName">
+            الأغنية الأولى
+          </h3>
+
+          <p>
+            Mosab × Asoom
+          </p>
+
+        </div>
+
+        <button id="playBtn" class="big-play">
+          ▶
+        </button>
+
+        <button id="switchSong" class="small-btn">
+          تبديل 🎵
+        </button>
+
+      </div>
+
+      <div class="music-note">
+        🎶 استمع للحظة... واترك الذكرى تتكلم.
+      </div>
+
+    </section>
+
+
+    <!-- ================= CHAT ================= -->
+
+    <section id="chat" class="screen">
+
+      <div class="section-title">
+
+        <span>💬</span>
+
+        <h2>
+          مساحتنا
+        </h2>
+
+        <p>
+          مساحة صغيرة للكلمات العفوية.
+        </p>
+
+      </div>
+
+      <div id="chatBox" class="chat-box">
+
+        <div class="bubble mosab">
+          <strong>Mosab 👨‍💻</strong>
+          <br>
+          أهلًا Asoom ❤️
+        </div>
+
+        <div class="bubble asoom">
+          <strong>Asoom 🦷</strong>
+          <br>
+          أهلًا 😄
+        </div>
+
+      </div>
+
+      <div class="chat-input">
+
+        <input
+          id="chatInput"
+          type="text"
+          placeholder="اكتب شيئًا..."
+        >
+
+        <button id="sendBtn">
+          إرسال
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= GAMES ================= -->
+
+    <section id="games" class="screen">
+
+      <div class="section-title">
+
+        <span>🎮</span>
+
+        <h2>
+          ألعابنا
+        </h2>
+
+        <p>
+          لأن الذكريات لا تكون جميلة بدون بعض المرح.
+        </p>
+
+      </div>
+
+      <div class="game-list">
+
+        <button class="game-card" data-game="questions">
+
+          <span>💞</span>
+
+          <strong>
+            مين يعرف الثاني أكثر؟
+          </strong>
+
+          <small>
+            أسئلة واختيارات
+          </small>
+
+        </button>
+
+
+        <button class="game-card" data-game="choices">
+
+          <span>🎴</span>
+
+          <strong>
+            اختاري لنا
+          </strong>
+
+          <small>
+            ماذا نختار الآن؟
+          </small>
+
+        </button>
+
+
+        <button class="game-card" data-game="memory">
+
+          <span>🧠</span>
+
+          <strong>
+            اختبار الذكريات
+          </strong>
+
+          <small>
+            هل تتذكر اللحظة؟
+          </small>
+
+        </button>
+
+      </div>
+
+      <div id="gameArea" class="game-area"></div>
+
+    </section>
+
+
+    <!-- ================= GIFT ================= -->
+
+    <section id="gift" class="screen gift-screen">
+
+      <div class="gift-box">
+
+        <div class="gift-icon">
+          🎁
+        </div>
+
+        <h2>
+          هدية صغيرة
+        </h2>
+
+        <p>
+          ليست الهدية في حجمها...
+          <br>
+          أحيانًا الفكرة خلفها هي أجمل ما فيها.
+        </p>
+
+        <button id="openGift" class="main-btn">
+          افتح الهدية ✨
+        </button>
+
+        <div id="giftMessage" class="gift-message"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= END ================= -->
+
+    <section id="end" class="screen ending">
+
+      <div class="rose">
+        🌹
+      </div>
+
+      <div class="heart">
+        ❤️
+      </div>
+
+      <h2>
+        إلى Asoom
+      </h2>
+
+      <p>
+        قد تكون هذه مجرد صفحة ويب...
+        <br>
+        لكنها تحمل داخلها مجموعة من اللحظات.
+      </p>
+
+      <div class="final-line">
+
+        بعض الأشياء لا تُقاس بقيمتها،
+        <br>
+        بل بالذكرى التي تتركها.
+
+      </div>
+
+      <strong class="signature">
+        Mosab × Asoom
+      </strong>
+
+      <p class="end-line">
+        والجميل أن الحكايات الجميلة
+        لا تحتاج أن تنتهي هنا. ✨
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= NAVIGATION ================= -->
+
+  <nav class="navigation">
+
+    <button data-screen="home">
+      🏠
+    </button>
+
+    <button data-screen="philosophy">
+      🌙
+    </button>
+
+    <button data-screen="letters">
+      💌
+    </button>
+
+    <button data-screen="memories">
+      📸
+    </button>
+
+    <button data-screen="musicSection">
+      🎵
+    </button>
+
+    <button data-screen="chat">
+      💬
+    </button>
+
+    <button data-screen="games">
+      🎮
+    </button>
+
+  </nav>
+
+
+  <!-- MUSIC -->
+
+  <audio id="music" preload="metadata">
+
+    <source
+      id="musicSource"
+      src="song1.mp3"
+      type="audio/mpeg"
+    >
+
+  </audio>
+
+
+  <script src="app.js"></script>
+
+</body>
+        </html>
